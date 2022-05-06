@@ -1,0 +1,43 @@
+{
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
+  "extensions.autoUpdate": false,
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.fontSize": 13,
+  "workbench.startupEditor": "none",
+  "update.mode": "none",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "explorer.confirmDelete": false,
+  // For Commented Scope
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  // For C++ Formatter
+  "editor.formatOnType": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  // "C_Cpp.clang_format_fallbackStyle": "WebKit",
+  "C_Cpp.formatting": "vcFormat",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeElse": false,
+  "C_Cpp.vcFormat.newLine.beforeCatch": false,
+  "C_Cpp.vcFormat.space.insertAfterSemicolon": true
+}
